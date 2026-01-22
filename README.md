@@ -1,6 +1,6 @@
 duck
 
-moose
+mammoth
 
 cat
 
