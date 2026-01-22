@@ -1,0 +1,6 @@
+duck
+
+moose
+
+cat
+
