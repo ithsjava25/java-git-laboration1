@@ -1,1 +1,59 @@
-this is the fix2
+git --version
+git config --global user.name "Adam Ottosson"
+git config --global user.email "addeecsgo@gmail.com"
+git config --global init.defaultBranch main
+git config --list
+
+mkdir laboration1-git
+cd laboration1-git
+
+git init
+git status
+git add README.md
+git commit -m "Initial commit"
+
+git checkout -b feature1
+git add README.md
+git commit -m "Update animals in README"
+
+git checkout main
+git add README.md
+git commit -m "Change moose to mammoth in README"
+
+git merge feature1
+git add README.md
+git commit
+
+git tag extinct
+git reset --hard HEAD~1
+
+git branch feature2
+git add README.md
+git commit -m "Capitalize animal names"
+
+git checkout feature2
+git add fix1.txt
+git commit -m "Add fix1.txt"
+
+git add fix2.txt
+git commit -m "Add fix2.txt"
+
+git checkout main
+git cherry-pick a311614
+
+git checkout -b cleanup_test
+git add README.md
+git commit -m "Add bird"
+
+git add README.md
+git commit -m "Add fish"
+
+git add README.md
+git commit -m "Add snake"
+
+git rebase -i HEAD~3
+git commit --amend -m "Added several animals"
+
+git add README.md
+git commit -m "Addid turtle"
+git commit --amend -m "Added turtle"
