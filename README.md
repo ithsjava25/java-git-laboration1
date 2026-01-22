@@ -1,6 +1,6 @@
 duck
-
-mammoth
-
+mahmut
+mouse
 cat
+dog
 
